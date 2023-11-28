@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Monsterlite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Document</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/04.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/rek.css" rel="stylesheet">
+     <!-- ลิงก์ไปยัง Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xr1pj6SAkSWUlMiiC72h+DhvBE2IzSnsG/GpTMLR5b5CtXONnEVBeXkO82IpL/Z9U2AdnyxQ4+1U1hSAdU2+cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .dark-logo {
+        /* เพิ่มสไตล์รูปภาพตามต้องการ */
+        margin-right: 10px; /* ระยะห่างข้างหลังของรูปภาพ */
+        border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม (หากเป็นรูปสี่เหลี่ยม) */
+    }
+
+    .text-center {
+        /* เพิ่มสไตล์ข้อความตามต้องการ */
+    text-align: center; /* จัดวางข้อความตรงกลาง */
+    font-size: 18px; /* เปลี่ยนขนาดตัวอักษร */
+    font-weight: bold; /* ทำให้ตัวอักษรหนาขึ้น */
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
+
+    .profile-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .profile-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-icon i {
+        color: #fff;
+    }
+    
+    .btn-light{
+        left: 550px; /* ปรับตามความต้องการ */
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <header class="topbar mx-2" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md ">
+                <div class="navbar-header" data-logobg="skin6">
+                    <a class="navbar-brand" href="index.html">
+                        
+                    </a>
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul class="navbar-nav me-auto mt-md-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search ps-3">
+                                <!-- เริ่มต้นโลโก้และข้อความ -->
+                                <img src="../assets/images/04.png" alt="logo" class="dark-logo border-radius" width="50" height="50"></center>
+                                <div class="logo-and-text">
+                                    <h3 class="page-title mb-0 p-0 text-white">EP & IT SOLUTION CO.,LTD.</h3>
+                                    <h6 class="page-title mb-5 p-0 text-white">E-document</h6>
+                                </div>
+                                <!-- สิ้นสุดโลโก้และข้อความ -->
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <div class="scroll-sidebar">
+                <b class="logo-icon"></b>
+                <a class="navbar-brand" href="index.html">
+                    <div class="profile-container">
+                        <img src="../assets/images/05.jpg" alt="homepage" class="profile-image" style="size: cover;" width="80" height="80">
+                    </div>
+                </a>
+                </b>
+                <b class="text-dark text-center">
+                    <h5 class="text-white">Chonlada Siripongpaisan</h5>
+                    <h6 class="text-white">Power Admin</h6>
+                </b>
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <h6 class="pb-2 border-bottom text-white">Menu</h6>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="index.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Home</span></a></li></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="create_document.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Ceate Document</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="create_user_manager.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Ceate User Manager</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="report.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Report</span></a></li>
+                                    <br><br><br><br><br><br><br>
+                        <li class="text-center p-20 upgrade-btn">
+                            <a href="" class="text-dark mt-4" target="_blank">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-8 align-self-center mx-5">
+                    <h3 class="page-title mb-0 p-0 d-flex align-items-center text-white">
+                        <i class="folder-icon fa fa-folder"></i>
+                        ผู้ใช้งานทั้งหมด
+                        <!-- <button type="button" class="btn btn-light ms-auto" data-toggle="modal" data-target="#createUserModal">Create</button> -->
+                        <button type="button" class="btn btn-light ms-auto " data-toggle="modal" data-target="#createUserModal">Create</button>
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Modal สำหรับการสร้างผู้ใช้งาน -->
+    <div class="modal fade" id="createUserModal" tabindex="-1" role="dialog" aria-labelledby="createUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="createUserModalLabel">Create User</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body">
+                    <form id="createUserForm">
+                        <div class="row">
+                            <div class="form-group text-center position-relative">
+                                <div class="profile-icon mx-auto" id="preview-profile">
+                                    <i class="fas fa-user-circle fa-3x"></i>
+                                </div>
+                                <input type="file" class="form-control-file mt-2 position-absolute" id="profile-image" name="profile-image" onchange="previewImage(this)" style="opacity: 0; width: 100%; height: 100%; top: 0; left: 0; cursor: pointer;">
+                                <label for="profile-image" class="add-icon position-absolute" style="top: 70%; left: 270px; transform: translateY(-20%); cursor: pointer; font-size: 10px;">
+                                    <i class="fas fa-plus-circle fa-lg"></i>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="full-name" class="text-dark">ชื่อ-นามสกุล:</label>
+                                <input type="text" class="form-control" id="full-name" name="full-name" style="border: 1px solid #000; border-radius:.4rem;" required>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user-email" class="text-dark">Email:</label>
+                                    <input type="email" class="form-control" id="user-email" name="user-email" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user-phone" class="text-dark">เบอร์โทร:</label>
+                                    <input type="tel" class="form-control" id="user-phone" name="user-phone" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user-department" class="text-dark">แผนก:</label>
+                                    <input type="text" class="form-control" id="user-department" name="user-department" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="user-position" class="text-dark">ตำแหน่ง:</label>
+                                    <select class="form-select" id="user-position" name="user-position" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                        <option  selected></option>
+                                        <option value="position1">ตำแหน่งที่ 1</option>
+                                        <option value="position2">ตำแหน่งที่ 2</option>
+                                        <!-- เพิ่มตำแหน่งต่าง ๆ ตามที่คุณต้องการ -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="username" class="text-dark">Username:</label>
+                                    <input type="text" class="form-control" id="username" name="username" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="password" class="text-dark">Password:</label>
+                                    <input type="password" class="form-control" id="password" name="password" style="border: 1px solid #000; border-radius:.4rem;" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- เพิ่มฟิลด์อื่น ๆ ตามต้องการ -->
+                
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark mx-auto" style="width: 100%;">สร้าง</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br>
+    </div>
+    <script src="../assets/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <!-- เพิ่มไฟล์ Bootstrap JS หลัง jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function previewImage(input) {
+            var preview = document.getElementById('preview-profile');
+            var file = input.files[0];
+    
+            if (file) {
+                var reader = new FileReader();
+    
+                reader.onload = function (e) {
+                    preview.innerHTML = '<img src="' + e.target.result + '" alt="Profile Image">';
+                }
+    
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = '<i class="fas fa-user-circle fa-3x"></i>';
+            }
+        }
+    </script>
+    <script>
+        // เรียกใช้ jQuery
+        $(document).ready(function () {
+            // เมื่อคลิกปุ่ม "Create"
+            $(".btn-light").click(function () {
+                // เปิด Modal
+                $("#createUserModal").modal("show");
+            });
+    
+            // เมื่อฟอร์มสร้างผู้ใช้งานถูกส่ง
+            $("#createUserForm").submit(function (event) {
+                console.log("Form submitted"); // ตรวจสอบว่าฟอร์มถูกส่งหรือไม่
+                // ปิด Modal
+                $("#createUserModal").modal("hide");
+    
+                // ป้องกันการส่งฟอร์ม
+                event.preventDefault();
+    
+                // ทำการนำกลับไปยังหน้าหลัก
+                window.location.href = 'create_user_manager.html'; // แก้ไข 'index.html' ตามที่คุณต้องการ
+                $('.modal-backdrop').remove(); // เพิ่มบรรทัดนี้
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

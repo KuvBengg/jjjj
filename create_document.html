@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Monsterlite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Document</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/04.png">
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/rek.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* เลือกโลโก้ที่มี id เท่ากับ documentDate */
+        #documentDate::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+
+        .btn-light {
+            left: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md ">
+                <div class="navbar-header" data-logobg="skin6">
+                    <a class="navbar-brand" href="index.html">
+                        
+                    </a>
+                        
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul class="navbar-nav me-auto mt-md-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search ps-3">
+                                <!-- เริ่มต้นโลโก้และข้อความ -->
+                                <img src="../assets/images/05.png" alt="logo" class="dark-logo border-radius" width="50" height="50"></center>
+                                <div class="logo-and-text">
+                                    <h5 class="page-title mb-0 p-0 text-white">EP & IT SOLUTION CO.,LTD.</h5>
+                                    <h6 class="mb-5 p-0 text-white">E-document</h6>
+                                </div>
+                                <!-- สิ้นสุดโลโก้และข้อความ -->
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <div class="scroll-sidebar">
+                <b class="logo-icon"></b>
+                <a class="navbar-brand" href="index.html">
+                    <div class="profile-container">
+                        <img src="../assets/images/05.jpg" alt="homepage" class="profile-image" style="size: cover;" width="80" height="80">
+                    </div>
+                </a>
+                </b>
+                <b class="text-dark text-center">
+                    <h5 class="text-white">Chonlada Siripongpaisan</h5>
+                    <h6 class="text-white">Power Admin</h6>
+                </b>
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <h6 class="pb-2 border-bottom text-white">Menu</h6>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="index.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Home</span></a></li></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="create_document.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Ceate Document</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="create_user_manager.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Ceate User Manager</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="report.html" aria-expanded="false"><i class=""
+                                    aria-hidden="true"></i><span class="hide-menu">Report</span></a></li>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    
+                       
+                        <li class="text-center p-20 upgrade-btn">
+                            <a href="" class="text-dark mt-4" target="_blank">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- Page Wrapper -->
+<div class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive d-flex mx-4">
+                            <h6 class="page-title mx-3">เอกสารโครงการ</h6>
+                            <div class="col-lg-2 mx-2" style="border: 0.5px solid #ccc; border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="input-group">
+                                    <h6 class="label-style my-0" style="color: #333;">วันที่ออกเอกสาร</h6>
+                                    <span class="input-group-text text-danger">*</span>
+                                </div>
+                                <input class="form-control border-0" type="date" id="documentDate" name="documentDate" placeholder="DD-MM-YYYY" oninput="validateDate(this.value)" style="color: #007bff;">
+                            </div>
+                            <div class="col-lg-2 mx-2 " style="border: 0.5px solid #ccc; border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="input-group">
+                                    <h6 class="label-style my-0" style="color: #333;">เลขที่เอกสาร</h6>
+                                    <span class="input-group-text text-danger">*</span>
+                                </div>
+                                <input class="form-control border-0" type="text" id="documentNumber" name="documentNumber" placeholder="AAA-0000-000" style="color: #007bff;">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="table-responsive d-flex align-items-center mx-4">
+                        <h6 class="page-title mx-3">ผู้บันทึกโครงการ</h6>
+                        <span></span>
+                        <div class="col-lg-5 list-group-item rounded-3 flex-column  mx-2 d-flex ">
+                            <div class="input-group">
+                                <span class="label-style my-0" id="recorderName">ชื่อผู้บันทึก</span>
+                                <span class="input-group-text text-danger">*</span>
+                            </div>
+                                <input type="text" id="recorderName" name="recorderName" class="form-control border-0 my-0" placeholder="กรอกชื่อผู้บันทึกโครงการ" required>
+                        </div>
+                        
+                        <div class="col-lg-2 list-group-item rounded-3 flex-column custom-border-0 small mx-3">
+                            <div class="input-group">
+                                <span class="label-style" id="department">แผนก</span>
+                                <span class="input-group-text text-danger">*</span>
+                            </div>
+                                <select class="form-select border-0" id="department" name="department"  required>
+                                    <option  selected>เลือกแผนก</option>
+                                    <option value="แผนก A">แผนก A</option>
+                                    <option value="แผนก B">แผนก B</option>
+                                    <option value="แผนก C">แผนก C</option>
+                                </select>
+                        </div>
+                        
+                        <div class="col-lg-2 list-group-item rounded-3 flex-column custom-border-0 small">
+                            <div class="input-group">
+                                <span class="label-style" id="position">ตำแหน่ง</span>
+                                <span class="input-group-text text-danger">*</span>
+                            </div>
+                                <select class="form-select border-0" aria-label="Default select example">
+                                    <option selected>เลือกตำแหน่ง</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                    </div>
+                    <h6 class="pb-2 border-bottom"></h6>
+                    <div class="table-responsive d-flex align-items-center mx-4">
+                        <h6 class="page-title mx-3">ชื่อโครงการ</h6>
+                        <span></span>
+                        <div class="col-lg-4  list-group-item rounded-3 flex-column  mx-2 d-flex  ">
+                            <div class="input-group">
+                                <span class="label-style my-0" id="recorderName">ชื่อโครงการ</span>
+                                <span class="input-group-text text-danger">*</span>
+                            </div>
+                                <input type="text" id="recorderName" name="recorderName" class="form-control border-0 my-0 " placeholder="กรอกชื่อโครงการ" required>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive d-flex mx-4">
+                            <h6 class="page-title mx-3">ระยะเวลาดำเนินโครงการ</h6>
+                            <div class="col-lg-2 mx-2" style="border: 0.5px solid #ccc; border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="input-group">
+                                    <h6 class="label-style my-0" style="color: #333;">วันที่เริ่มโครงการ</h6>
+                                    <span class="input-group-text text-danger">*</span>
+                                </div>
+                                <input class="form-control border-0" type="date" id="documentDate" name="documentDate" placeholder="DD-MM-YYYY" oninput="validateDate(this.value)" style="color: #007bff;">
+                            </div>
+                            <div class="col-lg-2 mx-2" style="border: 0.5px solid #ccc; border-radius: 5px; margin-top: 5px; margin-bottom: 5px;">
+                                <div class="input-group">
+                                    <h6 class="label-style my-0" style="color: #333;">วันที่สิ้นสุดโครงการ</h6>
+                                    <span class="input-group-text text-danger">*</span>
+                                </div>
+                                <input class="form-control border-0" type="date" id="documentDate" name="documentDate" placeholder="DD-MM-YYYY" oninput="validateDate(this.value)" style="color: #007bff;">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <h6 class="pb-2 border-bottom"></h6>
+                    <div class="mx-4">
+                        <h6 class="page-title">รายละเอียดโครงการ</h6>
+                    </div>
+                    
+                    <br>
+                    <div class="mx-5">
+                        <h6 class="pb-2 border-bottom">ลำดับ  รายการ </h6>
+                    </div>
+                    <div id="itemContainer" class="input-group mb-3 mx-5 custom-input-group">
+                        <span class="input-group-text">1</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                     
+                    <button type="button" class="btn btn-sm ml-2 delete-item input-group-text" data-item-id="item1">x</button>
+                    </div>
+                    <div class="d-flex mx-5">
+                        <button type="button" id="addItem" class="btn btn-secondary btn-sm mr-auto">+ เพิ่ม</button>
+                    </div>
+                    <h6 class="pb-2 border-bottom"></h6>   
+                    <div class="mb-3 d-flex ">
+                        <h6 class="page-title mx-5 mb-0 ">หมายเหตุ</h6>
+                            <textarea class="form-control ml-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>  
+                    <h6 class="pb-2 border-bottom"></h6>   
+                    <div class="text-end">
+                        <!-- <a href="" class="btn btn-success" onclick="ga('Download');">Downloade</a> -->
+                        <a href="#" class="btn btn-success" onclick="downloadPDF();">Downloade</a>
+                        <button type="button" class="btn btn-outline-light shadow-sm text-success">Project</button>
+                    </div> 
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    function validateDate(input) {
+        // เช็คว่ารูปแบบวันที่ถูกต้องหรือไม่
+        var dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        if (dateRegex.test(input)) {
+            document.getElementById('documentDate').value = input;
+        } 
+    }
+</script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var dateInput = document.getElementById('documentDate');
+
+        dateInput.addEventListener('input', function () {
+            // เมื่อมีการเลือกวันที่เปลี่ยน, คุณสามารถทำอะไรก็ตามที่ต้องการที่นี่
+            // ตัวอย่าง: console.log('Selected date:', dateInput.value);
+        });
+    });
+</script> -->
+<script>
+    function downloadPDF() {
+      // Create a new instance of jsPDF
+      const pdf = new jsPDF();
+    
+      // Add content to the PDF
+      pdf.text('Hello, this is a PDF!', 10, 10);
+    
+      // Save the PDF as a file
+      pdf.save('document.pdf');
+      
+      // Optional: Track the download using Google Analytics
+      ga('send', 'event', 'Download', 'PDF');
+    }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var itemCount = 1;
+        
+            // เมื่อคลิกที่ปุ่ม + เพิ่ม
+            $("#addItem").click(function () {
+                var newItemID = "item" + itemCount;
+                var newItem = $("#itemContainer").clone();
+                newItem.attr("id", newItemID);
+                newItem.find(".input-group-text").text(itemCount + 1);
+                newItem.find(".delete-item").attr("data-item-id", newItemID); // เพิ่ม attribute ให้ปุ่มลบรู้ถึง ID ของรายการ
+                newItem.find("input").val(""); // เคลียร์ค่าของ input field ใหม่
+                newItem.find("input").attr("name", "item" + itemCount); // เพิ่ม attribute ให้ input field รู้ถึงชื่อ
+                newItem.insertAfter(".custom-input-group:last"); // แทรกหลัง element ที่มีอยู่ล่าสุด
+        
+                itemCount++;
+            });
+        
+            // เมื่อคลิกที่ปุ่มลบ
+            $(document).on("click", ".delete-item", function () {
+                var itemID = $(this).data("item-id");
+                $("#" + itemID).remove(); // ลบ div รายการตาม ID ที่ระบุ
+        
+                // ปรับการนับรายการ
+                itemCount = $(".custom-input-group").length;
+            });
+        });
+    </script>
+    <script src="../assets/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
